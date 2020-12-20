@@ -7,6 +7,6 @@ const conn = require('./config/db');
   // const result = await conn.insertAdvogado({oab: 10, nome: 'teste node', telefone: '12355', areaEspecializacao: 'node'}) 
   // console.log(result)
   console.log('---------')
-  const advogado = await conn.selectAdvogado();
+  const advogado = await conn.selectUsers();
   console.log(advogado)
 })()
