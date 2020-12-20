@@ -1,5 +1,3 @@
-
-
 async function connect() {
   if (global.connection && global.connection.state !== "disconnected")
     return global.connection;
@@ -21,7 +19,7 @@ async function connect() {
 async function selectUsers() {
   const conn = await connect();
   // desestruturação para pegar apenas o ídice que tem os registros da tabela
-  const [rows] = await conn.query("SELECT * FROM users");
+  const [rows] = await conn.query("SELECT * FROM USERS");
   return rows;
 }
 
