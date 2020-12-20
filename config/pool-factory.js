@@ -2,8 +2,7 @@ const mysql = require("mysql2");
 
 // cria um pool para acesso ao banco, ou seja, mantem uma conexão aberta para uma certa quantia de usuarios.
 const pool = mysql.createPool({
-  connectionLimit,
-  host: process.env.DB_SERVER,
+  host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_DATABASE,
